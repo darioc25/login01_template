@@ -1,0 +1,114 @@
+/* Screen < 992px */
+@media screen and (max-width: 992px){
+   .container-login{
+      width: 100%;
+      padding: 20px;
+   }
+
+   .section-header{
+      width: 80%;
+   }
+   
+   .section-form{
+      width: 80%;
+   }
+
+   .section-footer{
+      width: 80%;
+   }
+}
+
+/* Screen < 576px */
+@media screen and (max-width: 576px){
+   .container-login{
+      width: 100%;
+   }
+
+   .section-header{
+      width: 100%;
+   }
+   
+   .section-form{
+      width: 100%;
+   }
+
+   .section-footer{
+      width: 100%;
+   }
+}
+
+/* Screen >= 992px && Screen < 1200 */
+@media screen and (min-width: 992px){
+   .container-login{
+      width: 60%;
+   }
+
+   .section-header{
+      width: 80%;
+   }
+   
+   .section-form{
+      width: 80%;
+   }
+
+   .section-footer{
+      width: 80%;
+   }
+}
+
+/* Screen >= 1200 && Screen < 1400 */
+@media screen and (min-width: 1200px){
+   .container-login{
+      width: 50%;
+   }
+
+   .section-header{
+      width: 80%;
+   }
+   
+   .section-form{
+      width: 80%;
+   }
+
+   .section-footer{
+      width: 80%;
+   }
+}
+
+/* Screen >= 1400 && Screen < 1600 */
+@media screen and (min-width: 1400px){
+   .container-login{
+      width: 50%;
+   }
+
+   .section-header{
+      width: 70%;
+   }
+   
+   .section-form{
+      width: 70%;
+   }
+
+   .section-footer{
+      width: 70%;
+   }
+}
+
+/* Screen > 1600 */
+@media screen and (min-width: 1600px){
+   .container-login{
+      width: 50%;
+   }
+
+   .section-header{
+      width: 50%;
+   }
+   
+   .section-form{
+      width: 50%;
+   }
+
+   .section-footer{
+      width: 50%;
+   }
+}

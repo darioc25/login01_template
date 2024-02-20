@@ -1,0 +1,150 @@
+*{
+   box-sizing: border-box;
+   font-family: "Fredoka", sans-serif;
+}
+
+body{
+   margin: 0px;
+   padding: 0px;
+   height: 100vh;
+   width: 100%;
+   min-width: 360px;
+   background-image: url(./media/bg_clouds.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 50% 100%;
+}
+
+.container-login{
+   background-color: white;
+   height: 100%;
+   width: 50%;
+   float: right;
+   padding: 60px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.section-header{
+   width: 50%;
+}
+
+.section-header-logo{
+   font-size: 42px;
+   margin: 0px;
+   color: lightskyblue;
+}
+
+.section-header-title{
+   margin: 12px 0px 0px 0px;
+   font-size: 42px;
+   font-weight: 500;
+}
+
+.section-header-subtitle{
+   margin: 0px;
+   font-size: 18px;
+   color: rgb(189, 189, 189);
+}
+
+.section-form{
+   width: 50%;
+   margin: 38px 0px;
+}
+
+.section-form form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.section-form-input{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin-bottom: 12px;
+}
+
+.section-form-input input{
+   border-radius: 5px;
+   border: 1px solid lightgray;
+   width: 100%;
+   padding: 10px;
+   font-size: 16px;
+   outline: none;
+}
+
+.section-form-input input[type="text"]{
+   margin-bottom: 20px;
+}
+
+.section-form-option{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.section-form-option input[type="checkbox"]{
+   transform: scale(1.15);
+   margin: 0px 5px 0px 0px;
+}
+
+.section-form-option a{
+   text-decoration: none;
+   color: lightcoral;
+}
+
+.section-form-buttons{
+   margin-top: 26px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.section-form-buttons button{
+   width: 50%;
+   padding: 10px 0px;
+   font-size: 16px;
+   border: none;
+   border-radius: 5px;
+}
+
+.section-form-buttons button:hover{
+   cursor: pointer;
+}
+
+.section-form-buttons-signIn{
+   margin-right: 10px;
+   color: white;
+   background-color: lightskyblue;
+}
+
+.section-form-buttons-google{
+   margin-left: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   color: lightskyblue;
+   border: 2px solid lightskyblue !important;
+}
+
+.section-form-buttons-google p, i{
+   margin: 0px 3px;
+   padding: 0px;
+}
+
+.section-footer{
+   width: 50%;
+   text-align: center;
+}
+
+.section-footer a{
+   text-decoration: none;
+   color: lightcoral;
+}
