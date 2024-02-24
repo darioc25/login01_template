@@ -1,56 +1,89 @@
 *{
    box-sizing: border-box;
    font-family: "Fredoka", sans-serif;
+   margin: 0px;
 }
 
 body{
-   margin: 0px;
-   padding: 0px;
    height: 100vh;
-   width: 100%;
    min-width: 360px;
    background-image: url(./media/bg_clouds.svg);
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: 50% 100%;
+   background-position: 0% 100%;
+   position: relative;
+}
+
+.main-container{
+   position: absolute;
+   top: 50%;
+   left: 20px;
+   transform: translateY(-50%);
+   text-align: center;
+   transition: all 0.3s;
+}
+
+.main-suptitle{
+   margin-bottom: 10px;
+   background-color: rgba(255, 255, 255);
+   padding: 5px 0px;
+   font-weight: 500;
+   font-size: 16px;
+   text-transform: uppercase;
+   transition: all 0.3s;
+}
+
+.main-title{
+   font-size: 28px;
+   font-weight: 500;
+   background-color: rgba(0, 0, 0);
+   color: white;
+   padding: 15px 30px;
+   transition: all 0.3s;
 }
 
 .container-login{
    background-color: white;
    height: 100%;
-   width: 50%;
+   width: 40%;
    float: right;
-   padding: 60px;
+   padding: 150px;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   transition: all 0.3s;
+}
+
+/* Temp */
+.container-login > section{
+   background-color: white;
 }
 
 .section-header{
-   width: 50%;
+   width: 100%;
 }
 
 .section-header-logo{
-   font-size: 42px;
+   font-size: 52px;
    margin: 0px;
-   color: lightskyblue;
+   color: black;
 }
 
 .section-header-title{
    margin: 12px 0px 0px 0px;
-   font-size: 42px;
+   font-size: 48px;
    font-weight: 500;
 }
 
 .section-header-subtitle{
    margin: 0px;
    font-size: 18px;
-   color: rgb(189, 189, 189);
+   color: rgb(190, 190, 190);
 }
 
 .section-form{
-   width: 50%;
+   width: 100%;
    margin: 38px 0px;
 }
 
@@ -72,14 +105,18 @@ body{
 
 .section-form-input input{
    border-radius: 5px;
-   border: 1px solid lightgray;
+   border: 2px solid lightgray;
    width: 100%;
-   padding: 10px;
+   padding: 10px 15px;
    font-size: 16px;
    outline: none;
 }
 
-.section-form-input input[type="text"]{
+.section-form-input input:focus{
+   border-color: rgb(140, 140, 140);
+}
+
+.section-form-input input[type="email"]{
    margin-bottom: 20px;
 }
 
@@ -89,39 +126,58 @@ body{
    justify-content: space-between;
 }
 
+.section-form-option > label{
+   display: flex;
+   align-items: center;
+}
+
 .section-form-option input[type="checkbox"]{
-   transform: scale(1.15);
-   margin: 0px 5px 0px 0px;
+   margin-right: 5px;
+   height: 15px;
+   width: 15px;
+}
+
+.section-form-option input[type="checkbox"]:hover{
+   cursor: pointer;
 }
 
 .section-form-option a{
    text-decoration: none;
-   color: lightcoral;
+   color: black;
+   font-weight: 500;
+   transition: 0.1s;
+}
+
+.section-form-option a:hover{
+   color: #DB4437;
 }
 
 .section-form-buttons{
-   margin-top: 26px;
+   margin-top: 36px;
    width: 100%;
    display: flex;
    justify-content: space-between;
 }
 
-.section-form-buttons button{
+.section-form-buttons > button{
    width: 50%;
-   padding: 10px 0px;
+   padding: 15px 0px;
    font-size: 16px;
    border: none;
    border-radius: 5px;
-}
-
-.section-form-buttons button:hover{
-   cursor: pointer;
+   font-weight: 500;
+   transition: 0.3s;
 }
 
 .section-form-buttons-signIn{
    margin-right: 10px;
    color: white;
-   background-color: lightskyblue;
+   background-color: rgb(0, 180, 255);
+}
+
+.section-form-buttons-signIn:hover{
+   cursor: pointer;
+   transform: scale(0.95);
 }
 
 .section-form-buttons-google{
@@ -129,22 +185,33 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: white;
-   color: lightskyblue;
-   border: 2px solid lightskyblue !important;
 }
 
-.section-form-buttons-google p, i{
-   margin: 0px 3px;
-   padding: 0px;
+.section-form-buttons-google:hover{
+   cursor: pointer;
+   transform: scale(0.95);
+}
+
+.section-form-buttons-google > p{
+   margin-right: 8px;
+}
+
+.section-form-buttons-google > i{
+   color: #DB4437;
 }
 
 .section-footer{
-   width: 50%;
+   width: 100%;
    text-align: center;
 }
 
 .section-footer a{
    text-decoration: none;
-   color: lightcoral;
+   color: black;
+   font-weight: 500;
+   transition: 0.1s;
+}
+
+.section-footer a:hover{
+   color: #DB4437;
 }
